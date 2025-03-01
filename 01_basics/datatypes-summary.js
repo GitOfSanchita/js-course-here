@@ -50,3 +50,32 @@ console.log(typeof BigNumber);  // calculating type of the variables or the data
           Object => object
      
 */
+
+
+// ***********************************************************************
+
+/*  There are two types of memory in javascript - Stack memory and Heap memory.
+        1. Primitive datatypes are stored in the Stack memory.
+        2. Non-primitive or Reference datatypes are stored in the Heap memory.
+*/
+
+// Stack memory example:
+let myGithubName = "sanchitalakshman.com"
+
+let anotherName = myGithubName
+anotherName = "something.com"
+
+console.log(myGithubName);
+console.log(anotherName);
+
+// Heap memory example:
+let userOne = {
+    email: "userone@gmail.com",
+    upi: "user@ybl"
+}
+
+let userTwo = userOne
+userTwo.email = "usertwo@gmail.com"
+
+console.log(userOne.email);
+console.log(userTwo.email);
