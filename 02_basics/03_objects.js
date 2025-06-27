@@ -42,8 +42,8 @@ jsuser.greeting = function(){
 
 jsuser.greetingTwo = function(){
     console.log(`Hello JS user, ${this.name}`);
-}  // referenceing the 'name' of the object.
+}    // referenceing the 'name' of the object.      // string interpolation
 
 console.log(jsuser.greeting);    // [Function (anonymous)] -> function returns back means function is not executed but its reference is back.
-console.log(jsuser.greeting());    // Hello JS user
-console.log(jsuser.greetingTwo());
+console.log(jsuser.greeting());      // Hello JS user
+console.log(jsuser.greetingTwo());       // Hello JS user, Sanchita
