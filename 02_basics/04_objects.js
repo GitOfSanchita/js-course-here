@@ -62,3 +62,33 @@ console.log(Object.keys(tinderUser));     // [ 'id', 'name', 'isLoggedIn' ]    -
 console.log(Object.values(tinderUser));      // [ '123@abc', 'Sammy', false ]
 console.log(Object.entries(tinderUser));       // [ [ 'id', '123@abc' ], [ 'name', 'Sammy' ], [ 'isLoggedIn', false ] ]
 console.log(tinderUser.hasOwnProperty('isLoggedIn'));     // true
+
+
+
+// ********* de-structure of object *******
+
+const student = {
+    studentName: " Sanchita Lakshman",
+    roll: 60,
+    courseName: "javascript"
+}
+
+//console.log(student.studentName)   // Sanchita Lakshman
+
+const{studentName: name} = student
+//console.log(studentName);     // Sanchita Lakshman
+console.log(name);    // Sanchita Lakshman
+
+
+//de- structuring in react -> *******
+const navbar = ({company}) => {
+   }  // (props.company) or ({company})
+navbar(company = "abc company")
+
+
+// ********** JSON API **********     // json  => JavaScript Object Notation
+
+/* { "name": "Sanchita",
+    "coursename": "js",
+    "price": "free"
+    } */
