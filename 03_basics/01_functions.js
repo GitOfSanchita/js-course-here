@@ -53,3 +53,43 @@ console.log(loginUserMessage());   //************ undefined just logged in *****
 // loginUserMessage(username = "sam") => sam just logged in  
 
 
+function calculateCartPrice(...num1){
+    return num1
+}    // "..." => rest operator (or spread operator depends on the use case)
+
+console.log(calculateCartPrice(200, 400, 500, 2000));    // [ 200, 400, 500, 2000 ]
+
+//************* Interview important *************
+function calculateCartPrice(val1, val2, ...num1){
+    return num1
+} 
+
+console.log(calculateCartPrice(200, 400, 500, 2000));  // [ 500, 2000 ] => ...num1
+
+
+//Passing an Object in a function
+const user = {
+    username: "sanchita",
+    price: 199
+}
+
+function handleObject(anyobject){
+    console.log(`username is ${anyobject.username} and price is ${anyobject.price}`);
+}
+
+handleObject(user);   // username is sanchita and price is 199
+              //*** or ***
+handleObject({
+    username: "sam",
+    price: 399
+})                   // username is sam and price is 399
+
+
+// Passing an Array in a function
+const myNewArray = [300, 400, 100, 700]
+function returnValue(getArray){
+    return getArray[1]
+}
+console.log(returnValue(myNewArray));  // 400
+             //*** or ***
+console.log(returnValue([100, 300, 600, 500]));    // 300
