@@ -73,11 +73,14 @@ any()         // undefined     // (this) -> {}
 /*
 const addTwo = (num1, num2)  => {
     return num1 + num2
-}
-*/
+}                                 //****** Explicit return  (means using 'return' keyword with brasis) ******
+*/   
 
-//const addTwo = (num1, num2) => num1 + num2
-
-const addTwo = (num1, num2) => (num1 + num2)
+//const addTwo = (num1, num2) => num1 + num2             //****** Implicit return ****** 
+const addTwo = (num1, num2) => (num1 + num2)           //****** Implicit return ( using parenthesis) ******
 
 console.log(addTwo(3, 4));        // 7
+
+
+//const addTwo = (num1, num2) => ({username: "sanchita"})       
+//console.log(addTwo(3, 4));         // { username: 'sanchita' }
