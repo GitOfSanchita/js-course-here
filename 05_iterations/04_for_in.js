@@ -1,8 +1,8 @@
 const myObject = {
     js: 'javascript',
     cpp: 'C++',
-    rb: 'ruby',
-    swift: 'swift by apple'
+    rb: "ruby",
+    swift: "swift by apple"
 }
 
 /* for (const [key, value] of myObject) {
